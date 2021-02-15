@@ -1,0 +1,19 @@
+<ActionBar title="Dog API">
+  <NavigationButton></NavigationButton>
+  <ActionItem ios:position="right">
+    <button text="modinutidev"></button>
+  </ActionItem>
+</ActionBar>
+
+<StackLayout>
+  <GridLayout>
+    <ListView [items]="dogs.message">
+      <ng-template let-item="item">
+        <StackLayout>
+          <image src="{{ item }}"></image>
+          <label text="{{ item }}"></label>
+        </StackLayout>
+      </ng-template>
+    </ListView>
+  </GridLayout>
+</StackLayout>

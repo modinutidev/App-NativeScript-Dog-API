@@ -1,0 +1,15 @@
+<ActionBar title="Início">
+  <NavigationButton></NavigationButton>
+  <ActionItem ios:position="right">
+    <Button text="modinutidev"></Button>
+  </ActionItem>
+</ActionBar>
+
+<StackLayout>
+  <button
+    class="itemApi"
+    text="Dog API"
+    [nsRouterLink]="['/dogs']"
+    style="background-image: url('{{ imgDogApi.message }}')"
+  ></button>
+</StackLayout>
